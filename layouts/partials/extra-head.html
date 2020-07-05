@@ -1,0 +1,5 @@
+{{ $options := (dict "targetPath" "custom.css" "outputStyle" "compressed" "enableSourceMap" true) }}
+{{ $customStyle := resources.Get "scss/custom.scss" | resources.ToCSS $options | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $customStyle.RelPermalink }}">
+
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" defer></script>

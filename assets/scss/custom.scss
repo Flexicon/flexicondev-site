@@ -1,0 +1,43 @@
+@import 'variables';
+
+// Typography
+@media #{$media-size-phone} {
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+
+// Body and things related to dark/light theme
+body {
+  &:not(.dark-theme) {
+    background: #fafafa;
+
+    .header {
+      background: #f6f6f6;
+    }
+  }
+}
+
+// Header
+.header {
+  .logo {
+    &__text {
+      @media #{$media-size-phone} {
+        font-size: 0.75rem;
+      }
+    }
+
+    &__cursor {
+      background-color: #9932cc;
+    }
+  }
+}
+
+// Footer
+.footer {
+  &__content {
+    & > *:last-child {
+      padding: 0;
+    }
+  }
+}
