@@ -15,7 +15,7 @@ disableKinds = ["RSS"]
   # Logo stuff
   logoCodeSnippets = ['fmt.Println("hello world")', 'console.log("hello world")', 'print("hello world")', 'echo "hello world"', 'puts "hello world"']
 
-  homeSubtitle = "Web developer, wannabe guitarist, code monkey"
+  homeSubtitle = "Software developer, wannabe guitarist, code monkey"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false

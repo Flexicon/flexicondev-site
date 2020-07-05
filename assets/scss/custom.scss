@@ -18,6 +18,13 @@ body {
   }
 }
 
+// Main index page container
+main[aria-role="main"] {
+  > div {
+    padding: 0 10px;
+  }
+}
+
 // Header
 .header {
   .logo {
