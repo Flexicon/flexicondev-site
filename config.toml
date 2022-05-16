@@ -1,9 +1,9 @@
 baseURL = "https://flexicondev.com/"
 languageCode = "en-us"
-title = "Mike Repec | Flexicon"
+title = "Mike Repeć | Flexicon"
 theme = "hello-friend-ng"
 paginate = 10
-copyright = "Mike Repec"
+copyright = "Mike Repeć"
 disableKinds = ["RSS"]
 
 [params]
