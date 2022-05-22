@@ -15,14 +15,14 @@ disableKinds = ["RSS"]
   # Logo stuff
   logoCodeSnippets = ['fmt.Println("hello world")', 'console.log("hello world")', 'print("hello world")', 'echo "hello world"', 'puts "hello world"']
 
-  homeSubtitle = "Software developer, wannabe speedcuber, and tinkerer"
+  homeSubtitle = "Software engineer, wannabe speedcuber, and tinkerer"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
   enableSharingButtons = true
 
   # Metadata mostly used in document's head
-  description = "Software developer, wannabe speedcuber, and tinkerer"
+  description = "Software engineer, wannabe speedcuber, and tinkerer"
   keywords = "flexicon, flexicondev, homepage, blog"
   images = [""]
 
