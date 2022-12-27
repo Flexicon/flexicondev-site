@@ -13,9 +13,9 @@ disableKinds = ["RSS"]
   dateformNumTime = "2006-01-02 15:04 -0700"
   
   # Logo stuff
-  logoCodeSnippets = ['fmt.Println("hello world")', 'console.log("hello world")', 'print("hello world")', 'echo "hello world"', 'puts "hello world"']
+  logoCodeSnippets = ['fmt.Println("hello world")', 'console.log("hello world")', 'println("hello world")', 'echo "hello world"', 'puts "hello world"']
 
-  homeSubtitle = "Software engineer, wannabe speedcuber, and tinkerer"
+  homeSubtitle = "Software engineer @ Personio, wannabe speedcuber, and tinkerer"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
