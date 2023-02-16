@@ -10,3 +10,9 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "https://blog.flexicondev.com/*"
+  to = "https://blog.flexicon.dev/:splat"
+  status = 301
+  force = true
+
