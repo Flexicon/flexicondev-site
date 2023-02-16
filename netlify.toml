@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "https://flexicondev.com/*"
+  to = "https://flexicon.dev/:splat"
+  status = 301
+  force = true
+
