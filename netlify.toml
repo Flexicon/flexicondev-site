@@ -1,3 +1,10 @@
+[build]
+  publish = "public"
+  command = "hugo --gc --minify"
+
+[build.environment]
+  HUGO_VERSION = "0.151.0"
+
 [[redirects]]
   from = "https://flexicondev.com/*"
   to = "https://flexicon.dev/:splat"
