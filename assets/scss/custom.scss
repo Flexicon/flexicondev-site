@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 // Typography
 @media #{$media-size-phone} {
@@ -46,5 +46,15 @@ main[aria-role="main"] {
     & > *:last-child {
       padding: 0;
     }
+  }
+}
+
+// 404 page
+.btn-404 {
+  > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
   }
 }
