@@ -56,7 +56,7 @@ disableKinds = ["RSS"]
   [languages.en]
     readOtherPosts = "Read other posts"
 
-#   [[menu.main]]
-#     identifier = "blog"
-#     name       = "Blog"
-#     url        = "/posts"
+[[menu.main]]
+  identifier = "about"
+  name       = "About"
+  url        = "/about"
