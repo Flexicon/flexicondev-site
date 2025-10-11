@@ -59,5 +59,52 @@
       "Maintaining Go and C# based microservices that interact via http and gRPC.",
       "Built internal Admin panel for all integrations resources at the company to simplify monitoring and management."
     ]
+  },
+  {
+    "title": "Senior Full Stack Engineer",
+    "company": "ComeOn Group",
+    "url": "https://www.comeon-group.com/",
+    "logo": "images/comeon_group_logo.jpeg",
+    "period": "Apr 2019 - May 2020",
+    "highlights": [
+      "Development and maintenance of a long running Payments platform, used by multiple iGaming platforms and casinos.",
+      "Event driven backend with emphasis on performance and reliability, serving hundreds of thousands of transactions every week.",
+      "Delivering custom front-end application solutions, such as admin panels and in-house tools, with modern tech stacks (Angular 8+, Vue.js, Material Design, Ant Design)."
+    ]
+  },
+  {
+    "title": "Full Stack Engineer",
+    "company": "Boldare",
+    "url": "https://www.boldare.com/",
+    "logo": "images/boldarecom_logo.jpeg",
+    "period": "May 2018 - Apr 2019",
+    "highlights": [
+      "Development of enterprise frontend applications.",
+      "Crafting high quality User Experiences.",
+      "Working directly with clients to create bespoke digital products."
+    ]
+  },
+  {
+    "title": "Software Developer",
+    "company": "Positive Power (defunct)",
+    "url": "https://web.archive.org/web/20160322222016/http://www.positive-power.pl/",
+    "logo": "images/positive_power_logo.png",
+    "period": "Apr 2019 - May 2020",
+    "highlights": [
+      "PHP and Javascript developer working mainly with Zend Framework and Doctrine.",
+      "Frontend lead for a bespoke enterprise client application including large asset management and mailing in Angular 5."
+    ]
+  },
+  {
+    "title": "Web Developer",
+    "company": "Apicode",
+    "url": "https://apicode.net/",
+    "logo": "images/apicode_logo.jpeg",
+    "period": "Apr 2016 - Jun 2017",
+    "highlights": [
+      "Hands on development of web client projects from genesis to delivery",
+      "PHP development with a focus on Joomla and WordPress CMS platforms.",
+      "Implementing performant, sleek and modern responsive designs ensuring cross browser compliance."
+    ]
   }
 ]
