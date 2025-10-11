@@ -1,0 +1,13 @@
+baseURL = "https://flexicon.dev/"
+languageCode = "en-us"
+title = "Mike Repeć | Flexicon"
+theme = "hello-friend-ng"
+copyright = "Mike Repeć"
+
+[pagination]
+  pagerSize = 10
+
+[taxonomies]
+  category = "blog"
+  tag = "tags"
+  series = "series"

@@ -1,0 +1,38 @@
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04 -0700"
+
+# Logo stuff
+logoCodeSnippets = ['fmt.Println("hello world")', 'console.log("hello world")', 'println("hello world")', 'echo "hello world"', 'puts "hello world"']
+
+homeSubtitle = "Staff Software engineer @ ClickUp, wannabe speedcuber, and tinkerer"
+
+# Set disableReadOtherPosts to true in order to hide the links to other posts.
+disableReadOtherPosts = false
+enableSharingButtons = true
+
+# Metadata mostly used in document's head
+description = "Software engineer, wannabe speedcuber, and tinkerer"
+keywords = "flexicon, flexicondev, homepage, blog"
+images = [""]
+
+# Default theme "light" or "dark"
+defaultTheme = "dark"
+
+# Social icons
+[[social]]
+  name = "github"
+  url  = "https://github.com/flexicon"
+
+[[social]]
+  name = "linkedin"
+  url  = "https://www.linkedin.com/in/mikerepec/"
+
+[[social]]
+  name = "stackoverflow"
+  url  = "https://stackoverflow.com/users/3112167/mike-r"
+
+[[social]]
+  name = "twitter"
+  url  = "https://twitter.com/flexicondev"
