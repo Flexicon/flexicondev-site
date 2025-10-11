@@ -3,12 +3,10 @@
     {{ range . }}
       {{ $company := .company }}
       <div class="mb-10">
-        <div class="flex items-center gap-2 text-lg">
-          <a href="{{ .url }}" title="{{ $company }}">
-            {{ with $.Page.Resources.Get .logo }}
-              <img class="not-prose w-6 h-6 rounded-lg flex-shrink-0 object-cover" src="{{ .RelPermalink }}" alt="{{ $company }} logo" />
-            {{ end }}
-          </a>
+        <div class="flex md:items-center gap-2 text-lg">
+          {{ with $.Page.Resources.Get .logo }}
+            <img class="not-prose mt-1 md:mt-0 w-6 h-6 rounded-lg flex-shrink-0 object-cover" src="{{ .RelPermalink }}" alt="{{ $company }} logo" />
+          {{ end }}
           <span>
             <strong>{{ .title }}</strong> at <a href="{{ .url }}">{{ .company }}</a> ({{ .period }})
           </span>
