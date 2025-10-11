@@ -5,6 +5,11 @@
   [goldmark.renderer]
     unsafe = true
 
+  [goldmark.parser]
+    [goldmark.parser.attribute]
+      block = true
+      title = true
+
   [goldmark.extensions]
     [goldmark.extensions.passthrough]
       enable = true
