@@ -1,0 +1,15 @@
+.PHONY: dev build
+
+themes/blowfish/.git:
+	git submodule update --init --recursive
+
+themes/blowfish/node_modules: themes/blowfish/.git themes/blowfish/package-lock.json
+	cd themes/blowfish && npm ci
+	touch themes/blowfish/node_modules
+
+dev: themes/blowfish/node_modules
+	hugo serve
+
+build: themes/blowfish/node_modules
+	hugo build
+
