@@ -3,6 +3,7 @@
     "title": "Engineering Manager",
     "company": "ClickUp",
     "url": "https://clickup.com/",
+    "logo": "images/clickup_app_logo.jpeg",
     "period": "Dec 2024 - Present",
     "highlights": [
       "Leading two fast-paced engineering squads, responsible for building high-impact product features at scale.",
@@ -15,6 +16,7 @@
     "title": "Staff Software Engineer",
     "company": "ClickUp",
     "url": "https://clickup.com/",
+    "logo": "images/clickup_app_logo.jpeg",
     "period": "Aug 2024 - Dec 2024",
     "highlights": [
       "Full-stack development within a foundational product squad, working across Angular 18+ frontends and Node.js backends with Nest+TypeScript."
@@ -24,6 +26,7 @@
     "title": "Senior Platform Engineer",
     "company": "Personio",
     "url": "https://www.personio.com/",
+    "logo": "images/personio_logo.jpeg",
     "period": "May 2022 - Aug 2024",
     "highlights": [
       "Platform Engineering for all of Personio's Product Engineering teams. Providing Libraries & Frameworks to empower those teams and make software development even more awesome.",
@@ -36,6 +39,7 @@
     "title": "Engineering Manager",
     "company": "Teamwork",
     "url": "https://www.teamwork.com/",
+    "logo": "images/teamwork_com_logo.jpeg",
     "period": "May 2021 - May 2022",
     "highlights": [
       "Built and led a new team of 6 cross-functional engineers from the ground up, providing personal as well as technical leadership while maintaining a SaaS product integrations platform.",
@@ -48,6 +52,7 @@
     "title": "Senior Software Engineer",
     "company": "Teamwork",
     "url": "https://www.teamwork.com/",
+    "logo": "images/teamwork_com_logo.jpeg",
     "period": "May 2020 - May 2021",
     "highlights": [
       "Designing and building out the software architecture for an integrations platform within a SaaS product.",
