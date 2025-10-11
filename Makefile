@@ -8,8 +8,7 @@ themes/blowfish/node_modules: themes/blowfish/.git themes/blowfish/package-lock.
 	touch themes/blowfish/node_modules
 
 dev: themes/blowfish/node_modules
-	hugo serve
+	npm run dev
 
 build: themes/blowfish/node_modules
-	hugo build
-
+	npm run build
