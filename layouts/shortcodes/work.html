@@ -1,0 +1,12 @@
+{{ with .Page.Resources.Get "work.json" }}
+  {{ with . | transform.Unmarshal }}
+    {{ range . }}
+      <p><strong>{{ .title }}</strong> at <a href="{{ .url }}">{{ .company }}</a> ({{ .period }})</p>
+      <ul>
+        {{ range .highlights }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  {{ end }}
+{{ end }}

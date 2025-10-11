@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Engineering Manager",
+    "company": "ClickUp",
+    "url": "https://clickup.com/",
+    "period": "Dec 2024 - Present",
+    "highlights": [
+      "Leading two fast-paced engineering squads, responsible for building high-impact product features at scale.",
+      "Partnering with Product to shape roadmaps, triage issues, and balance delivery speed with technical quality.",
+      "Building strong teams through mentoring, hiring interviews, and regular 1:1s while fostering a culture of ownership and excellence.",
+      "Staying hands-on by contributing code, reviewing pull requests, and helping drive service reliability."
+    ]
+  },
+  {
+    "title": "Staff Software Engineer",
+    "company": "ClickUp",
+    "url": "https://clickup.com/",
+    "period": "Aug 2024 - Dec 2024",
+    "highlights": [
+      "Full-stack development within a foundational product squad, working across Angular 18+ frontends and Node.js backends with Nest+TypeScript."
+    ]
+  },
+  {
+    "title": "Senior Platform Engineer",
+    "company": "Personio",
+    "url": "https://www.personio.com/",
+    "period": "May 2022 - Aug 2024",
+    "highlights": [
+      "Platform Engineering for all of Personio's Product Engineering teams. Providing Libraries & Frameworks to empower those teams and make software development even more awesome.",
+      "Building dependency upgrade automations in order to reduce software staleness across an organization of more than 300 engineers. Automatic dependency upgrades for projects built with: Ruby and Kotlin.",
+      "Providing Java libraries as abstractions over common and critical use-cases across the organization, such as ensuring SaaS Customer Tenancy separation, Feature Flagging functionality and test wrappers around databases and AWS resources. Technology used: Kotlin, TypeScript, Go.",
+      "Maintaining a mono-repo and budding ecosystem of internal CLI tools. Built with: Go and NX."
+    ]
+  },
+  {
+    "title": "Engineering Manager",
+    "company": "Teamwork",
+    "url": "https://www.teamwork.com/",
+    "period": "May 2021 - May 2022",
+    "highlights": [
+      "Built and led a new team of 6 cross-functional engineers from the ground up, providing personal as well as technical leadership while maintaining a SaaS product integrations platform.",
+      "Managing the growth and direction of an engineering team, as well as individual team members.",
+      "Responsible for the technical architecture behind a new series of microservices built for integrating different services into an existing stack.",
+      "Worked alongside the Automations team to develop powerful workflows that customers could setup with third party services working bidirectionally."
+    ]
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Teamwork",
+    "url": "https://www.teamwork.com/",
+    "period": "May 2020 - May 2021",
+    "highlights": [
+      "Designing and building out the software architecture for an integrations platform within a SaaS product.",
+      "Maintaining Go and C# based microservices that interact via http and gRPC.",
+      "Built internal Admin panel for all integrations resources at the company to simplify monitoring and management."
+    ]
+  }
+]
