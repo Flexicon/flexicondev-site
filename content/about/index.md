@@ -1,5 +1,6 @@
 ---
 title: About
+layout: simple
 ---
 
 ## Hi, I'm Mike! 👋
