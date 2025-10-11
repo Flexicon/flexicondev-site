@@ -2,17 +2,19 @@
   {{ with . | transform.Unmarshal }}
     {{ range . }}
       {{ $company := .company }}
-      <div class="work-entry" style="margin-bottom: 2.5rem;">
-        <div class="work-entry__header" style="display: flex; align-items: center; gap: .9rem; font-size: 1.125rem;">
+      <div class="work-entry">
+        <div class="work-entry__header">
           <a href="{{ .url }}" title="{{ $company }}">
             {{ with $.Page.Resources.Get .logo }}
-              <img src="{{ .RelPermalink }}" alt="{{ $company }} logo" style="width: 1.5rem; height: 1.5rem; border-radius: 8px; flex-shrink: 0; object-fit: cover;" />
+              <img src="{{ .RelPermalink }}" alt="{{ $company }} logo" />
             {{ end }}
           </a>
-          <span style="margin: 0;"><strong>{{ .title }}</strong> at <a href="{{ .url }}">{{ .company }}</a> ({{ .period }})</span>
+          <span>
+            <strong>{{ .title }}</strong> at <a href="{{ .url }}">{{ .company }}</a> ({{ .period }})
+          </span>
         </div>
         <div class="work-entry__details">
-          <ul style="margin-top: 0.5rem;">
+          <ul>
             {{ range .highlights }}
               <li>{{ . }}</li>
             {{ end }}

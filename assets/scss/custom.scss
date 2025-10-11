@@ -58,3 +58,29 @@ main[aria-role="main"] {
     gap: 0.25rem;
   }
 }
+
+// Work experience
+.work-entry {
+  margin-bottom: 2.5rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    font-size: 1.125rem;
+
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 8px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+  }
+
+  &__details {
+    ul {
+      margin-top: 0.5rem;
+    }
+  }
+}
