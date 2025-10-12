@@ -1,0 +1,19 @@
+{
+  "name": "og-image-generator",
+  "version": "1.0.0",
+  "description": "Generates an OG image screenshot from HTML using Puppeteer.",
+  "license": "MIT",
+  "author": {
+    "name": "Mike Repeć",
+    "github": "https://github.com/flexicon",
+    "url": "https://flexicon.dev"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "generate": "node index.js"
+  },
+  "dependencies": {
+    "puppeteer": "^24.24.0"
+  }
+}
