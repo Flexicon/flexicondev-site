@@ -16,3 +16,10 @@ dev: themes/blowfish/node_modules node_modules
 
 build: themes/blowfish/node_modules
 	npm run build
+
+scripts/og-image-generator/node_modules: scripts/og-image-generator/package.json
+	cd scripts/og-image-generator && npm ci
+	touch scripts/og-image-generator/node_modules
+
+og-image: scripts/og-image-generator/node_modules
+	cd scripts/og-image-generator && npm run generate
