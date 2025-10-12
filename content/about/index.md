@@ -3,7 +3,12 @@ title: About
 layout: simple
 ---
 
-## Hi, I'm Mike! 👋
+{{< figure src="images/me.jpeg" nozoom=true class="w-16 h-16 sm:w-20 sm:h-20 float-left mr-3 sm:mr-4" >}}
+
+Hi, I'm Mike! 👋
+{class="text-2xl sm:text-4xl font-bold text-neutral mb-3"}
+
+{{< badges "Software Engineer,Tech Lead" >}}
 
 I’m a full-stack software engineer and technical leader with 9+ years of experience
 across diverse industries.\
