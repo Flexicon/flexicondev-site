@@ -15,6 +15,9 @@ enableCodeCopy = false
 
 replyByEmail = false
 
+# Logo typewrite snippets
+logoCodeSnippets = ['fmt.Println("hello world")', 'console.log("hello world")', 'echo "hello world"', 'puts "hello world"']
+
 # mainSections = ["section1", "section2"]
 # robots = ""
 

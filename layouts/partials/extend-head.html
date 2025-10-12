@@ -1,0 +1,7 @@
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" defer></script>
+
+{{ $js := resources.Get "js/custom.js" | js.Build | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+{{ $css := resources.Get "css/custom.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">

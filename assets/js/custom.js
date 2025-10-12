@@ -1,6 +1,8 @@
 window.addEventListener('load', () => {
   // Get and prepare element for typewriting
   const logoEl = document.getElementById('logo-text');
+  if (!logoEl) return; // There's no logo element on subpages
+
   logoEl.innerHTML = ''; // clear logo el - default text "hello world" to handle disabled js
 
   // Prepare typewriter
