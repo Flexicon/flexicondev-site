@@ -14,6 +14,8 @@ Hi, I'm Mike! 👋
 
 {{< badges "Software Engineer" "Tech Lead" >}}
 
+{{< print_contact_info >}}
+
 ## Background
 
 I’m a full-stack software engineer and technical leader with 9+ years of experience

@@ -1,0 +1,18 @@
+{{ with .Page.Resources.Get "contact.json" }} {{ with . | transform.Unmarshal }}
+<div class="hidden print:block mt-6 -mb-6 px-4 py-3 border-l-4 border-l-purple-500 bg-gray-50 rounded exact-print">
+  <div class="space-y-1.5 font-mono text-sm">
+    <div class="flex gap-3">
+      <span class="text-purple-600 font-semibold">name:</span>
+      <span class="text-gray-900">{{ .name }}</span>
+    </div>
+    <div class="flex gap-3">
+      <span class="text-purple-600 font-semibold">email:</span>
+      <a href="mailto:{{ .email }}">{{ .email }}</a>
+    </div>
+    <div class="flex gap-3">
+      <span class="text-purple-600 font-semibold">website:</span>
+      <a href="{{ .website }}" target="_blank" rel="noopener">{{ .website }}</a>
+    </div>
+  </div>
+</div>
+{{ end }} {{ end }}
