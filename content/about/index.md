@@ -1,5 +1,5 @@
 ---
-title: About
+title: Michał Repeć - Software Engineer & Tech Lead
 layout: about
 ---
 
@@ -13,6 +13,8 @@ Hi, I'm Mike! 👋
 {class="text-2xl sm:text-4xl font-bold text-neutral-900 dark:text-neutral mb-3"}
 
 {{< badges "Software Engineer" "Tech Lead" >}}
+
+## Background
 
 I’m a full-stack software engineer and technical leader with 9+ years of experience
 across diverse industries.
