@@ -1,7 +1,7 @@
 /* Top level styles */
 body {
   &:not(.dark *) {
-    background-color: rgba(var(--color-neutral-100));
+    background-color: rgba(var(--color-neutral-50));
   }
 }
 
