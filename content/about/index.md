@@ -10,7 +10,7 @@ layout: about
 >}}
 
 Hi, I'm Mike! 👋
-{class="text-2xl sm:text-4xl font-bold text-neutral-900 dark:text-neutral mb-3"}
+{class="page-heading text-2xl sm:text-4xl font-bold print:text-neutral-900 mb-3"}
 
 {{< badges "Software Engineer" "Tech Lead" >}}
 

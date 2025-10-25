@@ -1,3 +1,10 @@
+/* Top level styles */
+body {
+  &:not(.dark *) {
+    background-color: rgba(var(--color-neutral-100));
+  }
+}
+
 /* Animations */
 :root {
   --animate-cursor: cursor 1s infinite;
@@ -15,8 +22,9 @@
   }
 }
 
-/* Links */
+/* Extra prose CSS */
 .prose {
+  /* Links */
   a {
     position: relative;
     text-decoration: none;
@@ -31,6 +39,21 @@
     background-size: 100% 100%;
     color: #faf5ff;
   }
+
+  /* Headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .page-heading {
+    color: rgba(var(--color-secondary-500));
+
+    .dark & {
+      color: rgba(var(--color-secondary-400));
+    }
+  }
 }
 
 @media print {
@@ -40,9 +63,19 @@
   }
 
   .prose {
-    h2 {
+    /* Headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       margin-bottom: 1rem;
-      border-bottom: 1px solid var(--tw-prose-hr);
+      border-bottom: 1px solid rgba(var(--color-primary-200));
+      color: rgba(var(--tw-prose-headings));
+    }
+    .page-heading {
+      color: rgba(var(--tw-prose-headings));
     }
 
     hr {
