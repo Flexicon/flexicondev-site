@@ -16,22 +16,20 @@
 }
 
 /* Links */
-@media not print {
-  .prose {
-    a {
-      position: relative;
-      text-decoration: none;
-      background: linear-gradient(to top, var(--tw-prose-links) 0%, var(--tw-prose-links) 100%);
-      background-size: 100% 2px;
-      background-position: 0 100%;
-      background-repeat: no-repeat;
-      transition: background-size 0.1s ease, color 0.1s ease;
-    }
+.prose {
+  a {
+    position: relative;
+    text-decoration: none;
+    background: linear-gradient(to top, var(--tw-prose-links) 0%, var(--tw-prose-links) 100%);
+    background-size: 100% 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.1s ease, color 0.1s ease;
+  }
 
-    a:hover {
-      background-size: 100% 100%;
-      color: #faf5ff;
-    }
+  a:hover {
+    background-size: 100% 100%;
+    color: #faf5ff;
   }
 }
 
@@ -49,6 +47,10 @@
 
     hr {
       display: none;
+    }
+
+    a {
+      background: none;
     }
   }
 }
