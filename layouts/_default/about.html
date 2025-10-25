@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <article class="w-full max-w-prose sm:px-6">
+  <article class="w-full max-w-prose sm:px-6 print:px-0">
     <header>
       {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
         {{ partial "breadcrumbs.html" . }}
