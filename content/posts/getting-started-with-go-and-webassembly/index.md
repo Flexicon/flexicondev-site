@@ -3,7 +3,7 @@ title: 'Gophers on the Web: Getting Started with Go and WebAssembly'
 date: 2024-04-17
 draft: false
 summary: 'A minimal, barebones, step-by-step guide on getting started with WebAssembly using the Go programming language.'
-tags: ['go', 'javascript', 'webassembly', 'wasm']
+tags: ['go', 'javascript', 'webassembly', 'wasm', 'software-engineering']
 ---
 
 Have you ever wanted to solve some specific problems in your web application, but JavaScript just wasn't spicy enough or you thought you could use _more processing power_?
