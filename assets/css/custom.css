@@ -1,8 +1,27 @@
+/* Fonts */
+@font-face {
+  font-family: 'Atkinson Fallback';
+  src: local(Tahoma);
+  size-adjust: 99%;
+  ascent-override: 104%;
+  descent-override: normal;
+  line-gap-override: normal;
+}
+
+@font-face {
+  font-family: 'Iosevka Fallback';
+  src: local(Courier New);
+  size-adjust: 84%;
+  ascent-override: 119%;
+  descent-override: normal;
+  line-gap-override: normal;
+}
+
 /* CSS Variables */
 :root {
   --animate-cursor: cursor 1s infinite;
-  --font-prose: 'Atkinson Hyperlegible', 'Open Sans', Helvetica Neue, Helvetica, sans-serif, system-ui;
-  --font-mono: 'Iosevka Web', 'Atkinson Hyperlegible', 'Inter', sans-serif;
+  --font-prose: 'Atkinson Hyperlegible', 'Atkinson Fallback', 'Open Sans', Helvetica, system-ui, sans-serif;
+  --font-mono: 'Iosevka Web', 'Iosevka Fallback', 'Consolas', 'Monaco', monospace;
 }
 
 /* Animations */
