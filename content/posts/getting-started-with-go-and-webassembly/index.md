@@ -26,7 +26,7 @@ In the context of this post, you can think of it as a way for us to run code wri
 
 Let's keep things simple here.
 
-![Mockup of the square root calculator web page](https://cdn.hashnode.com/res/hashnode/image/upload/v1713083331209/e0e039ca-6fa5-49a1-b5e5-e4d9e1cc953a.png)
+![Mockup of the square root calculator web page](mockup.png)
 
 We'll build a basic web page with a single input form. The form will take a number from the user and when submitted will display its square root.
 
@@ -118,7 +118,7 @@ gommand 'http.Handle("/", http.FileServer(http.Dir("."))); fmt.Println(http.List
 
 The snippet runs a simple Go HTTP File Server based on your current working directory. Once it's running navigate to your web page (if using `gommand` [http://localhost:8080/](http://localhost:8080/)) and check your console - you should see the following:
 
-![Screenshot of Go Wasm module output in browser console](https://cdn.hashnode.com/res/hashnode/image/upload/v1713087758323/bfa664c3-44c2-4bca-8d1d-add97ed844f8.png)
+![Screenshot of Go Wasm module output in browser console](wasm-module-console.webp)
 
 🚀 Great success! Our Wasm module has been successfully loaded, and the standard output from our Go program has landed in our browser console.
 
@@ -140,7 +140,7 @@ Here's the markup for our form:
 
 Save it and refresh the page to see... a bit more, but still not that much.
 
-![Screenshot of the square root calculator form](https://cdn.hashnode.com/res/hashnode/image/upload/v1713097630394/4eda1620-87f5-4766-bbe1-dcd0d63defa7.png)
+![Screenshot of the square root calculator form](prestyled-page.png)
 
 Let's quickly _spice things up a notch_ by dropping in a little semantic CSS, courtesy of [Pico](https://picocss.com/) ✨
 
@@ -156,7 +156,7 @@ Let's quickly _spice things up a notch_ by dropping in a little semantic CSS, co
 
 And - channeling my inner [Emeril Lagasse](https://en.wikipedia.org/wiki/Emeril_Lagasse) - bam!
 
-![Screenshot of styled square root calculator web page](https://cdn.hashnode.com/res/hashnode/image/upload/v1713098014381/5ae3831b-f204-40db-adef-37af3d1e84a3.png)
+![Screenshot of styled square root calculator web page](styled-page.png)
 
 Nice - that's a little more presentable at least, and immediately matches our earlier mockup.
 
@@ -255,7 +255,7 @@ WebAssembly.instantiateStreaming(fetch('app.wasm'), go.importObject).then((resul
 
 Now if we save our changes (make sure to rebuild your `app.wasm` file after making any changes to it) and refresh the page, we should be able to finally use the form and calculate any and all square roots we could possibly want.
 
-![Screenshot of Go calculating square roots in the browser](https://cdn.hashnode.com/res/hashnode/image/upload/v1713100835331/77ee4b42-3fe1-43e4-9e85-c8866d267a9f.png)
+![Screenshot of Go calculating square roots in the browser](final-page.png)
 
 And there you have it - Go running in the browser and doing math. The possibilities from here are essentially endless.
 
