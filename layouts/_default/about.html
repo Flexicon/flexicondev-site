@@ -1,14 +1,16 @@
 {{ define "main" }}
-  <article class="w-full max-w-prose sm:px-6 print:px-0">
-    <header>
+  <article class="w-full">
+    <header class="max-w-prose">
       {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
         {{ partial "breadcrumbs.html" . }}
       {{ end }}
     </header>
     <section class="max-w-full mt-6 prose dark:prose-invert">
-      {{ .Content }}
+      <div class="max-w-prose">
+        {{ .Content }}
+      </div>
     </section>
-    <footer class="pt-8 print:hidden">
+    <footer class="pt-8 print:hidden max-w-prose">
       {{ partial "sharing-links.html" . }}
     </footer>
   </article>

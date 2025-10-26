@@ -40,17 +40,21 @@
 /* Top level styles */
 body {
   font-family: var(--font-mono);
+}
 
-  &:not(.dark *) {
-    background-color: rgba(var(--color-neutral-50));
+/* Main content padding */
+@media (min-width: 640px) {
+  main#main-content {
+    padding-inline: 1.5rem;
+  }
+}
+@media print {
+  main#main-content {
+    padding-inline: 0px;
   }
 }
 
 /* Extra prose CSS */
-.max-w-prose {
-  max-width: 80ch;
-}
-
 .prose {
   font-family: var(--font-prose);
 
@@ -69,7 +73,10 @@ body {
     background-size: 100% 100%;
     color: #faf5ff;
   }
+}
 
+/* Article Styles */
+main#main-content > article {
   /* Headings */
   h1,
   h2,
@@ -87,13 +94,14 @@ body {
   }
 }
 
+/* Print Style overrides */
 @media print {
   .exact-print {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  .prose {
+  main#main-content > article {
     /* Headings */
     h1,
     h2,
@@ -108,7 +116,9 @@ body {
     .page-heading {
       color: rgba(var(--tw-prose-headings));
     }
+  }
 
+  .prose {
     hr {
       display: none;
     }

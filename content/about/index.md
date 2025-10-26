@@ -18,7 +18,7 @@ Hi, I'm Mike! 👋
 
 ## Background
 
-I’m a full-stack software engineer and technical leader with 9+ years of experience
+I’m a full-stack software engineer and technical leader with a decade of experience
 across diverse industries.
 Based in Silesia, Poland 🇵🇱, specializing in web technologies.\
 I thrive on complex problems that actually matter to users.
