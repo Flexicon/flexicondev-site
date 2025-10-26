@@ -22,6 +22,12 @@
   --animate-cursor: cursor 1s infinite;
   --font-prose: 'Atkinson Hyperlegible', 'Atkinson Fallback', 'Open Sans', Helvetica, system-ui, sans-serif;
   --font-mono: 'Iosevka Web', 'Iosevka Fallback', 'Consolas', 'Monaco', monospace;
+
+  /* Colours */
+  --heading-color: rgb(var(--color-secondary-500));
+}
+.dark {
+  --heading-color: rgb(var(--color-secondary-400));
 }
 
 /* Animations */
@@ -75,50 +81,28 @@ body {
   }
 }
 
-/* Article Styles */
-main#main-content > article {
-  /* Headings */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .page-heading {
-    font-family: var(--font-mono);
-    color: rgba(var(--color-secondary-500));
-
-    .dark & {
-      color: rgba(var(--color-secondary-400));
-    }
-  }
+/* Headings */
+:is(.prose, header#single_header) :is(h1, h2, h3, h4, h5, h6, .page-heading) {
+  font-family: var(--font-mono);
+  color: var(--heading-color);
 }
 
 /* Print Style overrides */
 @media print {
+  :root {
+    --heading-color: rgb(var(--tw-prose-headings));
+  }
+
   .exact-print {
-    -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
-  main#main-content > article {
-    /* Headings */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+  .prose {
+    :is(h1, h2, h3, h4, h5, h6) {
       margin-bottom: 1rem;
       border-bottom: 1px solid rgba(var(--color-primary-200));
-      color: rgba(var(--tw-prose-headings));
     }
-    .page-heading {
-      color: rgba(var(--tw-prose-headings));
-    }
-  }
 
-  .prose {
     hr {
       display: none;
     }
