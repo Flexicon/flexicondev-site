@@ -25,9 +25,11 @@
 
   /* Colours */
   --heading-color: rgb(var(--color-secondary-500));
+  --hero-img-bg: #eee;
 }
 .dark {
   --heading-color: rgb(var(--color-secondary-400));
+  --hero-img-bg: #222;
 }
 
 /* Animations */
@@ -85,6 +87,12 @@ body {
 :is(.prose, header#single_header) :is(h1, h2, h3, h4, h5, h6, .page-heading) {
   font-family: var(--font-mono);
   color: var(--heading-color);
+}
+
+/* Post Images */
+img.single_hero_round {
+  min-height: 50vh;
+  background-color: var(--hero-img-bg);
 }
 
 /* Print Style overrides */
