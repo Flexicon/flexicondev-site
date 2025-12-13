@@ -1,4 +1,4 @@
 [submodule "themes/blowfish"]
 	path = themes/blowfish
-	url = https://github.com/nunocoracao/blowfish.git
-	branch = main
+	url = https://github.com/Flexicon/blowfish.git
+	branch = feat-add-config-to-disable-styled-scrollbar
