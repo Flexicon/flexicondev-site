@@ -91,7 +91,7 @@ body {
 
 /* Post Images */
 img.single_hero_round {
-  min-height: 50dvh;
+  min-height: 50svh;
   background-color: var(--hero-img-bg);
 }
 
