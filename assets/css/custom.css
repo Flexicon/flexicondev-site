@@ -1,27 +1,50 @@
 /* Fonts */
 @font-face {
-  font-family: 'Atkinson Fallback';
-  src: local(Tahoma);
-  size-adjust: 99%;
-  ascent-override: 104%;
+  font-family: 'Ubuntu Mono Fallback';
+  src: local(Courier New);
+  size-adjust: 95%;
+  ascent-override: 105%;
   descent-override: normal;
   line-gap-override: normal;
 }
 
 @font-face {
-  font-family: 'Iosevka Fallback';
-  src: local(Courier New);
-  size-adjust: 84%;
-  ascent-override: 119%;
-  descent-override: normal;
-  line-gap-override: normal;
+  font-family: 'Ubuntu Mono';
+  src: url('/fonts/UbuntuMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('/fonts/UbuntuMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('/fonts/UbuntuMono-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('/fonts/UbuntuMono-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
 }
 
 /* CSS Variables */
 :root {
   --animate-cursor: cursor 1s infinite;
-  --font-prose: 'Atkinson Hyperlegible', 'Atkinson Fallback', 'Open Sans', Helvetica, system-ui, sans-serif;
-  --font-mono: 'Iosevka Web', 'Iosevka Fallback', 'Consolas', 'Monaco', monospace;
+  --font-prose: system-ui, sans-serif;
+  --font-mono: 'Ubuntu Mono', 'Ubuntu Mono Fallback', ui-monospace, monospace;
 
   /* Colours */
   --heading-color: rgb(var(--color-secondary-500));
