@@ -71,7 +71,7 @@ body {
     position: relative;
     text-decoration: none;
     background: linear-gradient(to top, var(--tw-prose-links) 0%, var(--tw-prose-links) 100%);
-    background-size: 100% 2px;
+    background-size: 100% 1px;
     background-position: 0 100%;
     background-repeat: no-repeat;
     transition: background-size 0.1s ease, color 0.1s ease;
