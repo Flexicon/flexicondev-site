@@ -3,6 +3,9 @@
 <meta name="twitter:image" content="{{ "/og-image.png" | absURL }}" />
 {{ end }}
 
+<link rel="preload" href="/fonts/UbuntuMono-Regular.woff2" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/fonts/UbuntuMono-Bold.woff2" as="font" type="font/ttf" crossorigin />
+
 <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" defer></script>
 
 {{ $js := resources.Get "js/custom.js" | js.Build | fingerprint }}
