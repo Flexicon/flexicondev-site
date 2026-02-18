@@ -25,8 +25,7 @@ I thrive on complex problems that actually matter to users.
 My toolkit spans **Go**, **Ruby**, **JavaScript/TypeScript**, and whatever else
 gets the job done.\
 When not coding, I'm usually playing video games, reading any weird-fiction book
-I can get my hands on, or experimenting in the kitchen with my
-beautiful fiancée.
+I can get my hands on, or experimenting in the kitchen with my fiancée.
 
 ---
 
