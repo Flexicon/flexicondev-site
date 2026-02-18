@@ -32,3 +32,5 @@ I can get my hands on, or experimenting in the kitchen with my fiancée.
 ## Experience
 
 {{< work >}}
+
+{{< print_skills >}}

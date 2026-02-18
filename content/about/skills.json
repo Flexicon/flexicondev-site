@@ -1,0 +1,36 @@
+  {
+    "languages": [
+      "TypeScript",
+      "JavaScript",
+      "Go",
+      "Kotlin",
+      "Python",
+      "Ruby"
+    ],
+    "frameworks": [
+      "Angular",
+      "React",
+      "Vue",
+      "Node",
+      "NestJS",
+      "Rails"
+    ],
+    "cloud": [
+      "AWS",
+      "Docker",
+      "Kubernetes"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MySQL",
+      "MongoDB",
+      "Redis",
+      "Apache Kafka"
+    ],
+    "tools": [
+      "Git",
+      "gRPC",
+      "CI/CD",
+      "Microservices"
+    ]
+  }
