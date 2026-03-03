@@ -120,6 +120,7 @@ img.single_hero_round {
   height: clamp(250px, 50vw, 40vh);
   max-height: unset;
   background-color: var(--hero-img-bg);
+  color: var(--hero-img-bg);
 }
 
 /* Print Style overrides */
