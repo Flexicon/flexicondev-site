@@ -1,10 +1,21 @@
 [
   {
+    "title": "Senior Core Platform Engineer II",
+    "company": "n8n",
+    "url": "https://n8n.io/",
+    "logo": "images/n8n_logo.jpg",
+    "period": "Apr 2026 - Present",
+    "highlights": [
+      "Building the core platform for n8n, an open source workflow automation tool with over 2 million users worldwide.",
+      "Working across the stack to build scalable and reliable services that power n8n's core features and integrations."
+    ]
+  },
+  {
     "title": "Engineering Manager",
     "company": "ClickUp",
     "url": "https://clickup.com/",
     "logo": "images/clickup_app_logo.jpeg",
-    "period": "Dec 2024 - Present",
+    "period": "Dec 2024 - Apr 2026",
     "highlights": [
       "Leading two engineering squads of 5 cross-functional engineers each, responsible for building high-impact product features at scale.",
       "Partnering with Product to shape roadmaps, triage issues, and balance delivery speed with technical quality.",
@@ -107,3 +118,4 @@
     ]
   }
 ]
+
