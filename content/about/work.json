@@ -6,8 +6,8 @@
     "logo": "images/n8n_logo.jpg",
     "period": "Apr 2026 - Present",
     "highlights": [
-      "Building the core platform for n8n, an open source workflow automation tool with over 2 million users worldwide.",
-      "Working across the stack to build scalable and reliable services that power n8n's core features and integrations."
+      "Building the core platform for n8n, a fair-code workflow automation platform with over 400+ integrations.",
+      "Working across the stack to build a scalable and flexible workflow execution engine."
     ]
   },
   {
@@ -118,4 +118,3 @@
     ]
   }
 ]
-
