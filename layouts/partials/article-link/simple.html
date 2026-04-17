@@ -65,7 +65,7 @@
       {{ with $featured }}
         {{ $featuredURL = .RelPermalink }}
         {{ if not (or $disableImageOptimization (eq .MediaType.SubType "svg")) }}
-          {{ $featuredURL = (.Resize "600x webp").RelPermalink }}
+          {{ $featuredURL = (.Fill "600x360 webp center").RelPermalink }}
         {{ end }}
       {{ end }}
     {{ end }}
