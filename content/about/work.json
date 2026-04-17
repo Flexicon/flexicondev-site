@@ -39,9 +39,8 @@
     "logo": "images/personio_logo.jpeg",
     "period": "May 2022 - Aug 2024",
     "highlights": [
-      "Platform Engineering for all of Personio's Product Engineering teams. Providing Libraries & Frameworks to empower those teams and reducing friction and maintenance overhead across 300+ engineers.",
-      "Providing Java libraries as abstractions over common and critical use-cases across the organization, such as ensuring SaaS Customer Tenancy separation, Feature Flagging functionality and test wrappers around databases and AWS resources. Technology used: Kotlin, TypeScript, Go.",
-      "Maintaining a mono-repo and budding ecosystem of internal CLI tools. Built with: Go and NX."
+      "Providing Java libraries and frameworks as abstractions over common and critical use-cases across the organization, such as ensuring SaaS Customer Tenancy separation, Feature Flagging functionality and test wrappers around databases and AWS resources. Technology used: Kotlin, TypeScript, Go.",
+      "Building dependency upgrade automations in order to reduce software staleness across an organization of more than 300 engineers. Automatic dependency upgrades for projects built with: Ruby and Kotlin."
     ]
   },
   {
