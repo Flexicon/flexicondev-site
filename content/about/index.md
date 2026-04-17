@@ -3,9 +3,8 @@ title: Michał Repeć - Software Engineer & Tech Lead
 layout: about
 ---
 
-{{< figure
+{{< avatar
   src="images/me.jpeg"
-  nozoom=true
   class="w-16 h-16 sm:w-20 sm:h-20 float-left mr-3 sm:mr-4"
 >}}
 
