@@ -9,7 +9,10 @@ layout: about
 >}}
 
 Hi, I'm Mike! 👋
-{class="page-heading text-2xl sm:text-4xl font-bold print:text-neutral-900 mb-3"}
+{class="page-heading mb-3 text-2xl sm:text-4xl font-bold print:hidden"}
+
+Michał Repeć
+{class="page-heading mb-3 text-2xl sm:text-4xl font-bold hidden print:block print:text-neutral-900"}
 
 {{< badges "Software Engineer" "Tech Lead" >}}
 
