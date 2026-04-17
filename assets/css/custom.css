@@ -123,6 +123,11 @@ img.single_hero_round {
   color: var(--hero-img-bg);
 }
 
+/* Article Links */
+article .thumbnail {
+  aspect-ratio: 5 / 3;
+}
+
 /* Print Style overrides */
 @media print {
   :root {
