@@ -1,18 +1,13 @@
 ---
 title: Michał Repeć - Software Engineer & Tech Lead
-layout: about
+type: page
 ---
 
-{{< avatar
-  src="images/me.jpeg"
-  class="w-16 h-16 sm:w-20 sm:h-20 float-left mr-3 sm:mr-4"
->}}
+{{< avatar src="images/me.jpeg" >}}
 
-Hi, I'm Mike! 👋
-{class="page-heading mb-3 text-2xl sm:text-4xl font-bold print:hidden"}
+<p class="screen-only">Hi, I'm Mike! 👋</p>
 
-Michał Repeć
-{class="page-heading mb-3 text-2xl sm:text-4xl font-bold hidden print:block print:text-neutral-900"}
+<p class="print-name">Michał Repeć</p>
 
 {{< badges "Software Engineer" "Tech Lead" >}}
 

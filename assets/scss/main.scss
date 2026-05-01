@@ -1,0 +1,39 @@
+// Setup Pico Framework
+@use "core/pico" with (
+  $enable-semantic-container: true,
+  $enable-viewport: true,
+  $enable-responsive-typography: true,
+  $theme-color: "default",
+  $modules: (
+      "components/card": false,
+      "components/dropdown": false,
+      "components/tooltip": false,
+
+      "forms/checkbox-radio-switch": false,
+      "forms/input-color": false,
+      "forms/input-date": false,
+      "forms/input-file": false,
+      "forms/input-range": false,
+
+      "themes/default": false,
+
+      "utilities/accessibility": false,
+      "utilities/reduce-motion": false,
+    )
+);
+@use "core/settings" as *;
+
+// Styles
+@use "theme/styles";
+@use "theme/schemes";
+
+// Components
+@use "components/button";
+@use "components/header";
+@use "components/footer";
+@use "components/single";
+@use "components/list";
+@use "components/page";
+
+// Project customisations
+@use "custom";

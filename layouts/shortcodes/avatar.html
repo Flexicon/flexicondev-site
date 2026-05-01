@@ -2,11 +2,5 @@
 {{- $img := .Page.Resources.GetMatch $src }}
 {{- $resized := $img.Fill "240x240 webp center" }}
 <figure>
-  <img
-    src="{{ $resized.RelPermalink }}"
-    width="240"
-    height="240"
-    class="my-0 rounded-md nozoom {{ .Get "class" }}"
-    alt="{{ .Get "alt" }}"
-  />
+  <img src="{{ $resized.RelPermalink }}" width="240" height="240" class="avatar" alt="{{ .Get "alt" }}" />
 </figure>
