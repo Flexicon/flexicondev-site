@@ -1,0 +1,14 @@
+{{ with .Page.Resources.Get "skills.json" }} {{ with . | transform.Unmarshal }}
+<h2 class="hidden print:block">Skills</h2>
+
+<div class="hidden print:block mt-6 -mb-6 px-4 py-3 border-l-4 border-l-purple-500 bg-gray-50 rounded exact-print">
+  <div class="space-y-1.5 font-mono text-sm">
+    {{ range $category, $skills := . }}
+    <div class="flex gap-3">
+      <span class="text-purple-600 font-semibold">{{ $category }}:</span>
+      <span class="text-gray-900">{{ delimit $skills ", " }}</span>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }} {{ end }}
