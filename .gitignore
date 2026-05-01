@@ -3,3 +3,6 @@ public/
 resources/_gen/
 node_modules/
 assets/css/compiled/
+
+# artifacts
+.playwright-mcp/
