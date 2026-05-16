@@ -1,3 +1,14 @@
+{{/*
+  OVERRIDE of themes/blowfish/layouts/partials/vendor.html
+
+  Local changes vs the theme version:
+  - Added `defer` to the jquery.slim.min.js <script> tag (was render-blocking
+    and unconditionally loaded by Blowfish).
+
+  When bumping the Blowfish submodule: diff
+  themes/blowfish/layouts/partials/vendor.html against this file and re-apply.
+*/}}
+
 {{/* jQuery */}}
 {{ $jqueryLib := resources.Get "lib/jquery/jquery.slim.min.js" | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
 <script defer src="{{ $jqueryLib.RelPermalink }}" integrity="{{ $jqueryLib.Data.Integrity }}"></script>

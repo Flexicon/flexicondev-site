@@ -1,3 +1,20 @@
+{{/*
+  OVERRIDE of themes/blowfish/layouts/partials/head.html
+
+  Local changes vs the theme version:
+  - Inline <script> after <meta charset> hardcodes class="dark" on <html>
+    so Tailwind's dark: variants fire. Replaces the runtime job of the
+    (also removed) appearance.min.js without any render-blocking JS.
+  - Removed the appearance.min.js script block entirely (we don't switch
+    themes — site is permanently dark).
+  - Added `defer` to the zoom.min.umd.js <script> tag (was render-blocking).
+  - Removed the Firebase block (firebase-app/firestore/auth + inline config).
+  - Removed the AdSense block (adsense meta + adsbygoogle.js).
+
+  When bumping the Blowfish submodule: diff
+  themes/blowfish/layouts/partials/head.html against this file and re-apply
+  the changes above on top of any upstream updates.
+*/}}
 <head>
   <meta charset="utf-8">
   <script>document.documentElement.classList.add('dark')</script>

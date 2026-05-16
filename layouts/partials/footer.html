@@ -1,3 +1,17 @@
+{{/*
+  OVERRIDE of themes/blowfish/layouts/partials/footer.html
+
+  Local changes vs the theme version:
+  - Wrapped the inline mediumZoom() call in a DOMContentLoaded listener.
+    Required because zoom.min.umd.js is now deferred (via the head.html
+    override) — mediumZoom would otherwise be undefined when the inline
+    script ran synchronously during body parsing.
+  - Removed the process.js <script> tag (Firebase views/likes integration,
+    unused on this site).
+
+  When bumping the Blowfish submodule: diff
+  themes/blowfish/layouts/partials/footer.html against this file and re-apply.
+*/}}
 <footer id="site-footer" class="py-10 print:hidden">
   {{/* Footer menu */}}
   {{ if .Site.Params.footer.showMenu | default true }}
