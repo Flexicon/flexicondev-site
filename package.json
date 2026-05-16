@@ -7,7 +7,7 @@
     "tailwind:watch": "NODE_ENV=development ./themes/blowfish/node_modules/@tailwindcss/cli/dist/index.mjs -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
     "dev": "concurrently -n tailwind,hugo -c cyan,magenta \"npm run tailwind:watch\" \"npm run server\"",
     "build:css": "NODE_ENV=production ./themes/blowfish/node_modules/@tailwindcss/cli/dist/index.mjs -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit",
-    "build": "npm run build:css && hugo build --minify"
+    "build": "npm run build:css && hugo build"
   },
   "devDependencies": {
     "concurrently": "^9.2.1"
