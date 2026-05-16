@@ -27,9 +27,5 @@
 {{ $typeit := resources.Get "lib/typeit/typeit.umd.js" | resources.Fingerprint $alg }}
 <script defer src="{{ $typeit.RelPermalink }}" integrity="{{ $typeit.Data.Integrity }}"></script>
 
-{{/* instant.page — hover/touch-intent prefetching for nav links */}}
-{{ $instantpage := resources.Get "js/instantpage.min.js" | resources.Fingerprint $alg }}
-<script defer type="module" src="{{ $instantpage.RelPermalink }}" integrity="{{ $instantpage.Data.Integrity }}"></script>
-
 {{ $js := resources.Get "js/custom.js" | js.Build | fingerprint }}
 <script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
