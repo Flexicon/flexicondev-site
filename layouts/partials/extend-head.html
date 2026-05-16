@@ -1,3 +1,18 @@
+{{/*
+  LOCAL <head> additions — Blowfish picks this up via its templates.Exists
+  check in layouts/partials/head.html. The theme does not ship its own
+  extend-head.html, so this file is purely additive (not an override).
+
+  Contents:
+  - og:image / twitter:image fallback meta tags for pages without images
+  - Ubuntu Mono Regular + Bold font preloads
+  - TypeIt (self-hosted from the theme's assets/lib/typeit/typeit.umd.js)
+  - instant.page 5.2.0 (self-hosted, in assets/js/) for hover/touch-intent
+    nav prefetching
+  - Custom JS bundle (assets/js/custom.js) — initializes the TypeIt logo
+    typing animation
+*/}}
+
 {{ if not .Params.images }}
 <meta property="og:image" content="{{ "/og-image.png" | absURL }}" />
 <meta name="twitter:image" content="{{ "/og-image.png" | absURL }}" />
@@ -6,7 +21,15 @@
 <link rel="preload" href="/fonts/UbuntuMono-Regular.woff2" as="font" type="font/ttf" crossorigin />
 <link rel="preload" href="/fonts/UbuntuMono-Bold.woff2" as="font" type="font/ttf" crossorigin />
 
-<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" defer></script>
+{{ $alg := site.Params.fingerprintAlgorithm | default "sha512" }}
+
+{{/* TypeIt — self-hosted from theme assets (was: jsdelivr CDN) */}}
+{{ $typeit := resources.Get "lib/typeit/typeit.umd.js" | resources.Fingerprint $alg }}
+<script defer src="{{ $typeit.RelPermalink }}" integrity="{{ $typeit.Data.Integrity }}"></script>
+
+{{/* instant.page — hover/touch-intent prefetching for nav links */}}
+{{ $instantpage := resources.Get "js/instantpage.min.js" | resources.Fingerprint $alg }}
+<script defer type="module" src="{{ $instantpage.RelPermalink }}" integrity="{{ $instantpage.Data.Integrity }}"></script>
 
 {{ $js := resources.Get "js/custom.js" | js.Build | fingerprint }}
-<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+<script defer src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
