@@ -11,6 +11,10 @@
         disable_session_recording: true,
         capture_performance: false,
         capture_exceptions: false,
+        // Disable /flags endpoint — without this, PostHog's server-side
+        // remote config overrides our client disables and re-enables the
+        // external scripts (dead-clicks, surveys, web-vitals, etc.).
+        advanced_disable_flags: true,
     })
 </script>
 <!-- End PostHog Analytics -->
