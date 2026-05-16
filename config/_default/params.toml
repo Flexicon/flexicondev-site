@@ -138,15 +138,6 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   cardView = false
   cardViewScreenWidth = false
 
-[firebase]
-  # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
-  # projectId = "XXXXXX"
-  # storageBucket = "XXXXXX"
-  # messagingSenderId = "XXXXXX"
-  # appId = "XXXXXX"
-  # measurementId = "XXXXXX"
-
 [fathomAnalytics]
   # site = "ABC12345"
   # domain = "llama.yoursite.com"
@@ -179,6 +170,3 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [rssnext]
   # feedId = ""
   # userId = ""
-
-[advertisement]
-  # adsense = ""

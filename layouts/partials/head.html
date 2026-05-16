@@ -198,38 +198,11 @@
     {{ partial "extend-head-uncached.html" . }}
   {{ end }}
 
-  {{/* Firebase */}}
-  {{ with $.Site.Params.firebase }}
-    {{ if isset $.Site.Params "firebase" }}
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-      <script>
+  {{/* Firebase block removed: not used on this site. Theme version would
+       load firebase-app.js, firebase-firestore.js, firebase-auth.js from
+       gstatic.com plus an inline config snippet — wires up the (also
+       removed) views/likes tracking in process.js and page.js. */}}
 
-    const firebaseConfig = {
-      apiKey: {{ $.Site.Params.firebase.apiKey }},
-      authDomain: {{ $.Site.Params.firebase.authDomain }},
-      projectId: {{ $.Site.Params.firebase.projectId }},
-      storageBucket: {{ $.Site.Params.firebase.storageBucket }},
-      messagingSenderId: {{ $.Site.Params.firebase.messagingSenderId }},
-      appId: {{ $.Site.Params.firebase.appId }},
-      measurementId: {{ $.Site.Params.firebase.measurementId }}
-    };
-
-        var app = firebase.initializeApp(firebaseConfig);
-        var db = firebase.firestore();
-        var auth = firebase.auth();
-
-      </script>
-    {{ end }}
-  {{ end }}
-
-  {{/* Advertisement */}}
-  {{ with .Site.Params.advertisement.adsense }}
-    <meta name="google-adsense-account" content="{{ . }}">
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}"
-      crossorigin="anonymous"></script>
-  {{ end }}
+  {{/* Advertisement block removed: AdSense not used on this site. Theme
+       version would emit the adsense meta tag and load adsbygoogle.js. */}}
 </head>
