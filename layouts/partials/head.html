@@ -134,7 +134,7 @@
     integrity="{{ $bundleCSS.Data.Integrity }}">
 
   {{/* JS loaded immediately */}}
-  {{/* appearance.js removed: dark mode is hardcoded via baseof.html `class="dark"` */}}
+  {{/* appearance.js removed: dark mode is hardcoded via inline script at the top of this file */}}
   {{ $enableA11y := .Site.Params.enableA11y | default false }}
   {{ if $enableA11y }}
     {{ $jsA11y := resources.Get "js/a11y.js" | resources.Minify | resources.Fingerprint $alg }}
