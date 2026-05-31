@@ -124,8 +124,10 @@ img.single_hero_round {
 }
 
 /* Page Transitions */
-@view-transition {
-  navigation: auto;
+@media (min-width: 768px) {
+  @view-transition {
+    navigation: auto;
+  }
 }
 
 ::view-transition-group(*) {
