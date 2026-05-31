@@ -72,6 +72,7 @@
   {{ end }}
 {{ end }}
 
+{{ $uid := md5 $page.RelPermalink }}
 
 <article class="{{ $cardClasses }}">
   {{ with $featuredURL }}
@@ -83,7 +84,8 @@
         decoding="async"
         width="300"
         height="180"
-        class="not-prose absolute inset-0 w-full h-full object-cover">
+        class="not-prose absolute inset-0 w-full h-full object-cover"
+        style="view-transition-name: post-image-{{ $uid }};">
     </div>
   {{ end }}
   <div class="{{ $cardContentClasses }}">
@@ -95,7 +97,7 @@
           href="{{ $page.RelPermalink }}"
         {{ end }}
         class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
+        <h2 style="view-transition-name: post-title-{{ $uid }};">
           {{ .Title | emojify }}
           {{ if .Params.externalUrl }}
             <span class="cursor-default align-top text-xs text-neutral-400 dark:text-neutral-500">

@@ -1,0 +1,8 @@
+{{ if and .IsPage (eq .Section "posts") }}
+  {{ $uid := md5 .RelPermalink }}
+  <style>
+    #single_header > h1 {
+      view-transition-name: post-title-{{ $uid }};
+    }
+  </style>
+{{ end }}

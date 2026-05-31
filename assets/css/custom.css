@@ -123,6 +123,22 @@ img.single_hero_round {
   color: var(--hero-img-bg);
 }
 
+/* Page Transitions */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(*) {
+  animation-duration: 0.3s;
+  animation-timing-function: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*) {
+    animation-duration: 0.01ms;
+  }
+}
+
 /* Article Links */
 article .thumbnail {
   aspect-ratio: 5 / 3;

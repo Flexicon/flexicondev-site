@@ -56,10 +56,12 @@
 
 {{ with $featuredURL }}
   {{ $style := "" }}
+  {{ $uid := md5 $.RelPermalink }}
   {{ $defaultPosition := cond $useDefault site.Params.imagePosition false }}
   {{ with $.Params.imagePosition | default $defaultPosition }}
     {{ $style = printf "object-position: %s;" . }}
   {{ end }}
+  {{ $style = printf "%s view-transition-name: post-image-%s;" $style $uid }}
   <figure>
     <img
       src="{{ . }}"
@@ -68,7 +70,7 @@
       decoding="async"
       fetchpriority="high"
       class="w-full rounded-lg single_hero_round nozoom"
-      {{ if $style }}style="{{ $style | safeCSS }}"{{ end }}>
+      style="{{ $style | safeCSS }}">
     {{ if $caption }}
       <figcaption class="text-sm text-neutral-700 dark:text-neutral-400 hover:underline text-center">
         {{ $caption | markdownify }}
