@@ -22,6 +22,15 @@ window.addEventListener('load', () => {
   typewriter.go();
 });
 
+window.addEventListener('pageswap', () => {
+  const namedTransitionScrollCutoff = 550;
+  if (window.scrollY < namedTransitionScrollCutoff) return;
+
+  document.querySelectorAll('[data-scroll-guard-transition], #single_header > h1').forEach((el) => {
+    el.style.viewTransitionName = 'none';
+  });
+});
+
 function shuffle(array) {
   let currentIndex = array.length,
     temporaryValue,
