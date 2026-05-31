@@ -23,6 +23,10 @@ window.addEventListener('load', () => {
 });
 
 window.addEventListener('pageswap', () => {
+  // Only post detail pages have matching named transitions from list cards to the single post header.
+  if (!document.querySelector('#single_header')) return;
+
+  // When leaving a scrolled post, disable those names so the browser does not animate from offscreen content.
   const namedTransitionScrollCutoff = 550;
   if (window.scrollY < namedTransitionScrollCutoff) return;
 
